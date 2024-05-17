@@ -13,7 +13,7 @@ public class LoginDAO {
 	//①クラス、メソッドの定義
 	//LoginDTO型を最後に呼び出し元に渡すので、LoginDTO型を戻り値にしたメソッドを作ります。
 	//Actionクラスの値を引数として受け取ります。
-	LoginDTO select(String name, String password) throws SQLException {
+	public LoginDTO select(String name, String password) throws SQLException {
 
 		//②DBConnectorのインスタンス化
 		//DBへの接続準備、DBと会話するためのコード、これでログインできる

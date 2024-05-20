@@ -12,6 +12,7 @@ import com.opensymphony.xwork2.ActionSupport;
 //すでにあるクラスとにたクラスを作る場合、元のクラスに必要な機能だけを追加する形で、新しいクラスを作ることを継承
 public class LoginAciton extends ActionSupport {
 
+	//① setterを定義することで、JSPでユーザーが入力した値がフィールドに格納される
 	//フィールド変数
 	//JSPから受け取る値、ここではnameとpassword を定義します。
 	//※必ずJSPでの定義と同じ名前にします！
@@ -19,6 +20,7 @@ public class LoginAciton extends ActionSupport {
 	private String password;
 
 	//メソッド名は「execute」
+	//②execute()メソッドを定義
 	public String execute() throws SQLException {
 
 		//メソッドの戻り値「ret」String ret = ERROR; を定義し、初期値としてERRORを代入します
@@ -35,6 +37,8 @@ public class LoginAciton extends ActionSupport {
 		//その後、DAOで取得した結果をLoginDTOに代入します。
 		dto = dao.select(name, password);
 
+		//③条件分岐でSUCCESSかERRORかを決める
+		//（ここでは、ユーザーがJSPで入力した値とDTOに格納してある値を比較している）
 		//ユーザーが入力した「ログインID」（name）と「パスワード」(password)が、
 		//DTOからもってきた値（dto.getName()）と(dto.getPassword())にそれぞれ一致するか確認
 		if (name.equals(dto.getName())) {
@@ -46,7 +50,9 @@ public class LoginAciton extends ActionSupport {
 
 		}
 
-		//?
+		//④execute()メソッドの結果 SUCCESS、ERRORを返す
+		//（それにより、あらかじめstruts.xmlに遷移先として定義したそれぞれのJSPに振り分けられる）
+		//if文の条件を満たした場合、戻り値「ret」の内容をSUCCESSに書き換えます。
 		return ret;
 
 	}

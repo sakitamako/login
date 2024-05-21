@@ -10,7 +10,7 @@ public class DBConnector {
 	private static String driverName = "com.mysql.jdbc.Driver";
 
 	//接続先のデータベース名を指定
-	private static String url = "jdbc:mysql://loccalhost_suzuki";
+	private static String url = "jdbc:mysql://localhost/logindb_suzuki";
 
 	//接続時に使用するユーザー名の定義
 	private static String user = "root";

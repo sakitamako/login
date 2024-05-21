@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 
 <!DOCTYPE struts PUBLIC
 "-//Apache Softwere Foundation//DTD Struts Configuration 2.3//EN"
@@ -17,11 +17,11 @@
         <!-- 3, プロジェクト内で使うActionファイルを記述 -->
         <!-- 4, パッケージ名、Actionクラス名の順で記述します。※③で呼び出されたActionクラスの場所を記述 -->
         <!-- 5, 普通はexecuteメソッドを記述します。※③で呼び出されたActionクラスのどのメソッドが呼ばれるかを記述 -->
-        <action name="LoginAction" class="com.ciworksdev.login.action.LoginAction" method="execute">
+        <action name="LoginAction" class="com.diworksdev.login.action.LoginAction" method="execute">
 
             <!-- execute()メソッドから返ってきた値によって、次に遷移するJSPを振り分けます。 -->
             <!-- 6, ⑤のメソッドからSUCCESSが返された場合、ここで記述したJSPファイルに遷移します -->
-            <result name="succrss">loginSuccess.jsp</result>
+            <result name="success">loginSuccess.jsp</result>
 
             <!-- 7, ⑤のメソッドからERRORが返された場合、ここで記述したJSPファイルに遷移します。 -->
             <result name="error">loginError.jsp</result>

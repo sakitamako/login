@@ -17,7 +17,8 @@
         <!-- ユーザーが入力したユーザーネームとパスワードの値に、それぞれname、passwordという名前をつけて送信 -->
 
         <!-- 「<s:form>」で囲まれたタグに入力された情報が「action=""」で指定した「Actionクラス」へ渡される -->
-        <s:form action="LoginAction">
+        <s:form>
+            <s:action name="LoginAction"/>
 
             <!-- 「name=""」で指定した名前と同名のActionクラスのフィールドに情報を渡します。 -->
             <!-- ※情報が渡される前提として、Actionクラスで該当フィールドのsetterの定義が必要 -->

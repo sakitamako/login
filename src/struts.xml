@@ -1,9 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <!DOCTYPE struts PUBLIC
-"-//Apache Softwere Foundation//DTD Struts Configuration 2.3//EN"
-"http://struts.apache.org/dtds/struts-2.3.dtd">
+"-//Apache Softwere Foundation//DTD Struts Configuration 2.5//EN"
+"http://struts.apache.org/dtds/struts-2.5.dtd">
 
+<!-- struts.xmlでは、JSPとJavaファイルの連携を設定をするファイル -->
 <struts>
 
     <!-- このプロジェクトで使うActionファイルが保存されているパッケージを宣言 -->

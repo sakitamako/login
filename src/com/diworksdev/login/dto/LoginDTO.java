@@ -1,5 +1,7 @@
 package com.diworksdev.login.dto;
 
+//DBから取得した情報をここに格納する！
+//DAOはここに格納した情報をActionクラスに渡す！
 public class LoginDTO {
 
 	//テーブルから取得するデータに対応したフィールド変数を宣言

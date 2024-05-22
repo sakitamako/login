@@ -6,6 +6,9 @@ import com.diworksdev.login.dao.LoginDAO;
 import com.diworksdev.login.dto.LoginDTO;
 import com.opensymphony.xwork2.ActionSupport;
 
+//Actionクラスでは、画面から送られてきたリクエストを取得する
+//内部処理に応じてDAOやDTOクラスを呼び出し、最終的に次のJSPへ値を返す
+
 //struts2が持つActionSupportというクラスを継承します。
 //（Actionクラスは基本的にこのクラスを継承します）
 //LoginAciton（子クラス） extends（継承） ActionSupport（親クラス）

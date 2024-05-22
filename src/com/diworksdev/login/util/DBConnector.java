@@ -4,6 +4,8 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
+// データベースを使う必要がある場合、DB接続 (コネクション)の設定をするファイル
+
 public class DBConnector {
 
 	//MySQL接続に必要な情報を設定

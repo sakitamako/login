@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<!-- ※注意：Strutsのバージョンは必ず2.3.xx系を選んでください。とテキストに書いてあるけど、
+古い Struts 2.3.x シリーズの直接の提供は停止されたと書いてあったため2.5.33を選んでしまった。
+バージョンが違うため、下記に入力を変更した、これは変えてはいけないところだったか？
+下記のConfiguration 2.5//EN" は元々Configuration 2.3//EN"だった、
+下記のdtds/struts-2.5.dtdは 元々dtds/struts-2.3.dtdだった -->
 <!DOCTYPE struts PUBLIC
 "-//Apache Softwere Foundation//DTD Struts Configuration 2.5//EN"
 "http://struts.apache.org/dtds/struts-2.5.dtd">

@@ -14,7 +14,6 @@
         <!-- ”strutsタグ”とはStrutsフレームワークで使える専用のHTMLタグです。（<s: で使うことができます） -->
         <!-- ＜form>タグ内の”name”と“password”をLoginActionに”submit”（送信）します -->
         <!-- ユーザーが入力したユーザーネームとパスワードの値に、それぞれname、passwordという名前をつけて送信 -->
-
         <!-- 「<s:form>」で囲まれたタグに入力された情報が「action=""」で指定した「Actionクラス」へ渡される -->
         <s:form action="LoginAction">
             <!-- 「name=""」で指定した名前と同名のActionクラスのフィールドに情報を渡します。 -->

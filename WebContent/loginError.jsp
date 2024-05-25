@@ -1,7 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="utf-8" %>
 <%@ taglib prefix="s" uri="/struts-tags" %>
 
-<!-- ログイン失敗で呼び出されるJSPファイル -->
 <!DOCTYPE html>
 <html>
     <head>

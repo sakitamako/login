@@ -1,11 +1,12 @@
 package com.diworksdev.login.action;
+
 import java.sql.SQLException;
 
 import com.diworksdev.login.dao.LoginDAO;
 import com.diworksdev.login.dto.LoginDTO;
 import com.opensymphony.xwork2.ActionSupport;
 
-public class LoginAciton extends ActionSupport {
+public class LoginAction extends ActionSupport {
 	private String name;
 	private String password;
 
@@ -46,4 +47,3 @@ public class LoginAciton extends ActionSupport {
 	}
 
 }
-

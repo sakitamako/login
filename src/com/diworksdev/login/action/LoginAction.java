@@ -46,7 +46,7 @@ public class LoginAction extends ActionSupport {
 
 		}
 
-		//?
+		//戻り値、意味が説明できない、、
 		return ret;
 
 	}

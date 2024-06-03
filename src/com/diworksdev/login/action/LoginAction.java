@@ -19,9 +19,10 @@ public class LoginAction extends ActionSupport {
 	private String password;
 
 	//メソッド名は「execute」
+	//管理コマンド・メッセージをコマンド・サーバーに送信し、何らかの応答メッセージを待ちます
 	public String execute() throws SQLException {
 
-		//メソッドの戻り値「ret」String ret = ERROR; を定義し、初期値としてERRORを代入
+		//メソッドの戻り値「ret」 String ret = ERROR; を定義し、初期値としてERRORを代入
 		String ret = ERROR;
 
 		//②DBConnectorのインスタンス化

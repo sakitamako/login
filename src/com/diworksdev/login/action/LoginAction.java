@@ -47,13 +47,15 @@ public class LoginAction extends ActionSupport {
 
 		}
 
-		//戻り値、意味が説明できない、、
+		//retに入った値を呼び出し元であるActionクラスに渡す
 		return ret;
 
 	}
 
 	//オブジェクト指向カプセル化
 	//一部のデータを取り出したり、書き換えたりすることができる
+	//getterは値を引っ張ってくるメソッド
+	//メソッド＝オブジェクトの操作を定義したもの
 	public String getName() {
 		return name;
 	}
@@ -61,15 +63,20 @@ public class LoginAction extends ActionSupport {
 	//setName、setPassword(setter）を定義することで、
 	//JSPでユーザーが入力したnameとpasswordの値が
 	//それぞれのフィールド変数に格納される
+	//setterは値を代入するメソッド
+	//メソッド＝オブジェクトの操作を定義したもの
 	public void setName(String name) {
 		this.name = name;
 	}
 
-
+	//getterは値を引っ張ってくるメソッド
+	//メソッド＝オブジェクトの操作を定義したもの
 	public String getPassword() {
 		return password;
 	}
 
+	//setterは値を代入するメソッド
+	//メソッド＝オブジェクトの操作を定義したもの
 	public void setPassword(String password) {
 		this.password = password;
 	}
